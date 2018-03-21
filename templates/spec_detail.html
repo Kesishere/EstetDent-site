@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2>{{ spec.name }}</h2>
+    <img id="detail_photo" src="{{ spec.photo.url }}">
+    <p>{{ spec.info }}</p>
+{% endblock %}

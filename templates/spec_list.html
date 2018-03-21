@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="spec">
+        <table>
+            {% for spec in spec_list %}
+                <tr>
+                    <th><h2>{{ spec.name }}</h2></th>
+                </tr>
+                <tr>
+
+                    <td id="spec_text">
+                        {{ spec.short_info }}
+                        <br>
+                        <p><a href="{% url 'spec_detail' pk=spec.pk %}">Читать далее >></a></p>
+                    </td>
+                    <td id="spec_image">
+                        <img src="{{ spec.photo.url }}">
+                    </td>
+                </tr>
+                <tr>
+                <td><br></td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}
