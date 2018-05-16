@@ -19,7 +19,7 @@
         </div>
         <div class="header-contacts">
             <p>Контактный телефон: +7 (495) 997-99-50, +7 (499) 167-09-42</p>
-            <p>Москва, ул. Открытое шоссе, д.12 <a href="{% url 'contacts' %}">Посмотреть на карте</a></p>
+            <p>Москва, ул. Открытое шоссе, д.12 к.3 <a href="{% url 'contacts' %}">Посмотреть на карте</a></p>
         </div>
     </div>
 </div>
@@ -42,8 +42,8 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav changefont">
                         <li><a href="{% url 'about' %}">Главная </a></li>
-                        <li><a href="#">Услуги </a></li>
-                        <li><a href="{% url 'spec_list'%}">Врачи</a></li>
+                        <li><a href="{% url 'serv_list' %}">Услуги </a></li>
+                        <li><a href="{% url 'spec_list'%}">Наши специалисты</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="{% url 'contacts' %}">Контакты</a></li>

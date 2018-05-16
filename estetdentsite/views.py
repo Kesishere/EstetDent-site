@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView, ListView, DetailView
 
-from estetdentsite.models import Spec
+from estetdentsite.models import Spec, Service
 
 
 class AboutView(TemplateView):
@@ -33,3 +33,12 @@ class SpecDetailView(DetailView):
 
 class ContactsView(TemplateView):
     template_name = 'contacts.html'
+
+class ServiceListView(ListView):
+    model = Service
+    template_name = 'serv_list.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['serv_list'] = Service.objects.all()
+        return context

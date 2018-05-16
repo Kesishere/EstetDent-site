@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="serv">
+        <table>
+            {% for serv in serv_list %}
+                <tr>
+                    <th><h2>{{ serv.name }}</h2></th>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}
