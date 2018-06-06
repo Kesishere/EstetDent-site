@@ -3,10 +3,12 @@
     <div class="container">
         <div class="row">
             {% for spec in spec_list %}
-                <div class="col-md-4 .col-xl-3">
+                <div class="col-md-4 .col-xl-3 .col-sm-6">
                     <div class="spec_info">
                         <a href="{% url 'spec_detail' pk=spec.pk %}"><h2>{{ spec.name }}</h2></a>
-                        {{ spec.spec }}
+                        <span id="spec_spec">{{ spec.spec }}</span>
+                        <br>
+                        <br>
                         <div id="spec_img">
                             <img src="{{ spec.photo.url }}">
                         </div>

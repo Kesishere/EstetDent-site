@@ -1,3 +1,6 @@
+body {
+    link: black;
+}
 .logo {
     width: 300px;
     float: left;
@@ -14,7 +17,7 @@
 }
 
 .carousel {
-    height: 400px !important;
+    height: 250px !important;
     overflow: hidden;
 }
 
@@ -49,4 +52,25 @@
     -webkit-border-radius: 100px; /* Safari, Chrome */
     -khtml-border-radius: 100px; /* KHTML */
     border-radius: 100px; /* CSS3 */
+    vertical-align: middle;
+}
+.content{
+    padding-top: 20px;
+}
+
+.jumbotron {
+    border: 1px solid darkgrey;
+}
+.spec_info{
+    width: 300px;
+}
+.spec_info a {
+    text-decoration: none;
+}
+.spec_info a h2 {
+    font-family: 'Cuprum', sans-serif;
+}
+
+#spec_spec{
+    font-style: italic;
 }
